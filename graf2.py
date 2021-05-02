@@ -15,7 +15,7 @@ def comp_sv():
 
 
 V = int(input())  # Кол-во вершин
-used = [False] * V
+used = []
 g = []
 gtemp = {i: set() for i in range(V)}
 for i in range(V):
@@ -24,5 +24,4 @@ for i in range(V):
     for j in range(V):
         if g[i][j]:
             gtemp[i].add(j)
-
-print("Есть циклы" if flag else "Циклов нет")
+g = gtemp
