@@ -25,3 +25,5 @@ for i in range(V):
         if g[i][j]:
             gtemp[i].add(j)
 g = gtemp
+comp_sv()
+        
